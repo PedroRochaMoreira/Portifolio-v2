@@ -26,7 +26,7 @@ export const projectsData: ProjectItem[] = [
     tags: ['Next.js 15', 'React 19', 'TypeScript', 'Tailwind CSS', 'Google Gemini API'],
     links: {
       repo: 'https://github.com/PedroRochaMoreira/Dashboard-Enem',
-      demo: 'https://ai.studio/apps/a1c0a85e-fa11-4df6-82cd-9fc2cbb3ade2',
+      demo: 'https://dashboarde-delta.vercel.app/',
     },
     technicalDecisions: [
       'Renderização híbrida com Next.js 15 App Router para carregamento rápido dos dados analíticos.',
@@ -44,6 +44,7 @@ export const projectsData: ProjectItem[] = [
     tags: ['HTML5 Semântico', 'CSS3 Modular', 'JavaScript Nativo', 'Node.js', 'SEO'],
     links: {
       repo: 'https://github.com/PedroRochaMoreira/Morano-Arquitetura',
+      demo: 'https://morano-arquitetura.vercel.app/',
     },
     technicalDecisions: [
       'Arquitetura estática zero-dependency no cliente para alcançar tempo de carregamento inferior a 1 segundo.',
@@ -61,6 +62,7 @@ export const projectsData: ProjectItem[] = [
     tags: ['HTML Semântico', 'CSS Architecture', 'Vanilla JS', 'Microinterações'],
     links: {
       repo: 'https://github.com/PedroRochaMoreira/Rocha-Dev',
+      demo: 'https://rocha-dev-flame.vercel.app',
     },
     technicalDecisions: [
       'Separação modular de CSS em camadas atômicas (navigation, components, signature-experience, refinement).',
@@ -77,8 +79,8 @@ export const projectsData: ProjectItem[] = [
     role: 'Design Engineer (Autor)',
     tags: ['Vite', 'React 19', 'TypeScript Strict', 'Tailwind v4', 'Motion', 'Shader WebGL'],
     links: {
-      repo: 'https://github.com/PedroRochaMoreira/Portifolio',
-      demo: 'https://portifolio-nine-plum-63.vercel.app',
+      repo: 'https://github.com/PedroRochaMoreira/Portifolio-v2',
+      demo: 'https://portifolio-v2-hazel-mu.vercel.app/#projetos',
     },
     technicalDecisions: [
       'Carregamento lazy e isolado do shader WebGL após primeiro paint, garantindo LCP inferior a 2 segundos.',

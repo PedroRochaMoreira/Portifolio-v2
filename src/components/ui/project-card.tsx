@@ -100,7 +100,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
             aria-label={`Ver aplicação online do projeto ${project.title} (abre em nova aba)`}
             className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-[#B08D57] hover:text-[#C5A065] transition-colors p-1 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B08D57]"
           >
-
+            <span>Ver Demo</span>
+            <svg className="w-3 h-3 stroke-current fill-none" viewBox="0 0 24 24" strokeWidth="2.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
           </a>
         )}
       </div>
