@@ -7,10 +7,8 @@ export function AboutSection() {
       aria-labelledby="sobre-titulo"
       className="px-6 md:px-12 py-24 border-t border-white/[0.06] max-w-5xl mx-auto w-full"
     >
-      {/* Título de Seção Semântico com Numeração Editorial */}
-      <div className="flex items-baseline gap-3 mb-10">
-        <span className="font-mono text-sm text-[#B08D57] font-semibold">01</span>
-        <span className="text-white/20 font-mono" aria-hidden="true">—</span>
+      {/* Título de Seção Semântico */}
+      <div className="mb-10">
         <h2 id="sobre-titulo" className="text-2xl sm:text-3xl font-bold tracking-tight text-[#EDEAE4]">
           Sobre
         </h2>
@@ -30,7 +28,7 @@ export function AboutSection() {
         {/* Painel de Fatos Rápidos */}
         <div className="md:col-span-5 p-6 rounded-lg bg-[#121214] border border-white/[0.06]">
           <h3 className="font-mono text-xs uppercase tracking-wider text-[#B08D57] pb-3 border-b border-white/[0.06] mb-4">
-            Fatos Rápidos
+            Atuação & Foco
           </h3>
 
           <dl className="space-y-4">

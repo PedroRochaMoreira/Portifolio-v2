@@ -4,10 +4,9 @@ import { cn } from '@/lib/utils';
 
 interface ProjectCardProps {
   project: ProjectItem;
-  index: number;
 }
 
-export function ProjectCard({ project, index }: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps) {
   const [showDecisions, setShowDecisions] = useState(false);
 
   return (
@@ -17,10 +16,10 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       )}
     >
       <div>
-        {/* Cabeçalho do Card: Numeração e Ano */}
+        {/* Cabeçalho do Card: Categoria e Ano */}
         <div className="flex items-center justify-between pb-4 border-b border-white/[0.04] mb-5">
           <span className="font-mono text-xs text-[#B08D57] tracking-wider font-semibold">
-            PROJETO // 0{index + 1}
+            ESTUDO DE CASO
           </span>
           <span className="font-mono text-xs text-[#9E9A91] tabular-nums">
             {project.year}

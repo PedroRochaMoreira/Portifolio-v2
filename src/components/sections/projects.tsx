@@ -9,25 +9,21 @@ export function ProjectsSection() {
       aria-labelledby="projetos-titulo"
       className="px-6 md:px-12 py-24 border-t border-white/[0.06] max-w-5xl mx-auto w-full"
     >
-      {/* Título de Seção com Numeração Editorial */}
+      {/* Título de Seção Semântico */}
       <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-12">
-        <div className="flex items-baseline gap-3">
-          <span className="font-mono text-sm text-[#B08D57] font-semibold">02</span>
-          <span className="text-white/20 font-mono" aria-hidden="true">—</span>
-          <h2 id="projetos-titulo" className="text-2xl sm:text-3xl font-bold tracking-tight text-[#EDEAE4]">
-            Projetos Selecionados
-          </h2>
-        </div>
+        <h2 id="projetos-titulo" className="text-2xl sm:text-3xl font-bold tracking-tight text-[#EDEAE4]">
+          Projetos
+        </h2>
 
         <p className="font-mono text-xs text-[#9E9A91] tracking-wide">
-          4 estudos de caso em destaque
+          Estudos de caso em destaque
         </p>
       </div>
 
       {/* Grade de Projetos */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {projectsData.map((project, index) => (
-          <ProjectCard key={project.id} project={project} index={index} />
+        {projectsData.map((project) => (
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
 

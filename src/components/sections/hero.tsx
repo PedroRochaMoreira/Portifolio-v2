@@ -27,7 +27,7 @@ export function HeroSection() {
 
         {/* Posicionamento factual sem clichês */}
         <p className="mt-6 text-lg sm:text-xl md:text-2xl text-[#9E9A91] max-w-2xl font-normal leading-relaxed">
-          Estudante de Engenharia de Software focado em engenharia de interface, sistemas de design e front-end de produção.
+          Engenheiro de Software focado em engenharia de interface, sistemas de design e front-end de produção.
         </p>
 
         {/* CTAs com alvos acessíveis (>= 44px) */}
