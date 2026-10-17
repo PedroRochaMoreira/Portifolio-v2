@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portifolio-nine-plum-63.vercel.app/sitemap.xml
