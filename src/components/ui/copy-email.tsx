@@ -10,19 +10,19 @@ export function CopyEmail({ email, className }: CopyEmailProps) {
   const { copied, copy } = useCopyToClipboard();
 
   return (
-    <div className={cn('inline-flex flex-col sm:flex-row items-start sm:items-center gap-3', className)}>
+    <div className={cn('w-full sm:w-auto inline-flex flex-col sm:flex-row items-stretch sm:items-center gap-3', className)}>
       <button
         type="button"
         onClick={() => copy(email)}
         aria-label={copied ? 'E-mail copiado para a área de transferência' : `Copiar e-mail ${email}`}
-        className="group min-h-[48px] px-5 py-3 rounded-md bg-[#121214] border border-[#B08D57]/30 hover:border-[#B08D57] text-[#EDEAE4] hover:text-white transition-all flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B08D57]"
+        className="group min-h-[48px] w-full sm:w-auto px-4 sm:px-5 py-3 rounded-md bg-[#121214] border border-[#B08D57]/30 hover:border-[#B08D57] text-[#EDEAE4] hover:text-white transition-all flex items-center justify-between sm:justify-start gap-2.5 sm:gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B08D57]"
       >
-        <span className="font-mono text-sm tracking-wide text-[#EDEAE4]">
+        <span className="font-mono text-xs sm:text-sm tracking-wide text-[#EDEAE4] truncate">
           {email}
         </span>
 
         {/* Ícone de feedback */}
-        <span className="p-1 rounded bg-white/[0.04] text-[#B08D57] group-hover:text-[#C5A065] transition-colors">
+        <span className="p-1 rounded bg-white/[0.04] text-[#B08D57] group-hover:text-[#C5A065] transition-colors shrink-0">
           {copied ? (
             <svg
               className="w-4 h-4 stroke-current fill-none text-emerald-400"
@@ -45,7 +45,7 @@ export function CopyEmail({ email, className }: CopyEmailProps) {
           )}
         </span>
 
-        <span className="font-mono text-xs uppercase tracking-wider text-[#9E9A91] group-hover:text-[#EDEAE4]">
+        <span className="font-mono text-xs uppercase tracking-wider text-[#9E9A91] group-hover:text-[#EDEAE4] shrink-0">
           {copied ? 'Copiado!' : 'Copiar'}
         </span>
       </button>

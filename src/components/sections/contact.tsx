@@ -17,8 +17,8 @@ export function ContactSection() {
         </h2>
       </div>
 
-      <div className="p-8 sm:p-12 rounded-lg bg-[#121214] border border-white/[0.06] flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-        <div>
+      <div className="p-6 sm:p-10 md:p-12 rounded-lg bg-[#121214] border border-white/[0.06] flex flex-col md:flex-row justify-between items-start md:items-center gap-8 overflow-hidden">
+        <div className="w-full md:max-w-md">
           {/* Status de Disponibilidade Discreto */}
           <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-full bg-[#B08D57]/10 border border-[#B08D57]/20 mb-4">
             <span className="w-2 h-2 rounded-full bg-[#B08D57] animate-pulse" aria-hidden="true" />
