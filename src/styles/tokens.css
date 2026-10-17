@@ -1,0 +1,24 @@
+:root {
+  /* Cores fundamentais do design system — Pedro Rocha */
+  --bg-base: #0A0A0B;
+  --surface-1: #121214;
+  --surface-2: #1A1A1E;
+  --surface-border: rgba(255, 255, 255, 0.08);
+  --surface-border-subtle: rgba(255, 255, 255, 0.04);
+
+  /* Texto com validação de contraste WCAG AAA */
+  --text-primary: #EDEAE4;
+  --text-muted: #9E9A91;
+
+  /* Acento bronze único da marca pessoal */
+  --bronze: #B08D57;
+  --bronze-highlight: #C5A065;
+  --bronze-muted: rgba(176, 141, 87, 0.12);
+  --bronze-border: rgba(176, 141, 87, 0.28);
+
+  /* Curvas e tempos de transição consistentes */
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+}

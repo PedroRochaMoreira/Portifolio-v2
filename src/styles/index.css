@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+/* Fontes auto-hospedadas com swap para zero layout shift e carregamento rápido */
+@import "@fontsource-variable/instrument-sans";
+@import "@fontsource-variable/geist-mono";
+
+@theme {
+  --color-bg-base: #0A0A0B;
+  --color-surface-1: #121214;
+  --color-surface-2: #1A1A1E;
+  --color-surface-border: rgba(255, 255, 255, 0.08);
+  --color-surface-border-subtle: rgba(255, 255, 255, 0.04);
+
+  --color-text-primary: #EDEAE4;
+  --color-text-muted: #9E9A91;
+
+  --color-bronze: #B08D57;
+  --color-bronze-highlight: #C5A065;
+  --color-bronze-muted: rgba(176, 141, 87, 0.12);
+  --color-bronze-border: rgba(176, 141, 87, 0.28);
+
+  --font-sans: 'Instrument Sans Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Reset de acessibilidade e renderização base */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Respeito estrito à preferência do usuário por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Estilo de foco acessível e evidente (WCAG 2.2 AA) */
+:focus-visible {
+  outline: 2px solid var(--bronze);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Evitar rolagem horizontal acidental */
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: var(--bg-base);
+}
+
+/* Utilitário para números tabulares em metadados */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Grão sutil de estúdio aplicado ao fundo sem afetar texto */
+.noise-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
