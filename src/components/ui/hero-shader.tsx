@@ -32,10 +32,10 @@ export function HeroShader() {
       return;
     }
 
-    // Carregamento lazy após o primeiro paint
+    // Carregamento lazy após o primeiro paint e medição do LCP
     const timer = setTimeout(() => {
       setCanRenderWebGL(true);
-    }, 400);
+    }, 1200);
 
     return () => clearTimeout(timer);
   }, [prefersReducedMotion]);
